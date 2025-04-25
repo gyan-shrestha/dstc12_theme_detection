@@ -1,0 +1,9 @@
+conda create -n nlp-env python=3.10 -y
+
+conda activate nlp-env
+
+pip install sentence-transformers langchain langchain-huggingface scikit-learn torch tqdm
+
+pip install notebook ipykernel
+python -m ipykernel install --user --name=nlp-env --display-name "Python (nlp-env)"
+
